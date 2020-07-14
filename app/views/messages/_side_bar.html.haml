@@ -2,18 +2,18 @@
   .side-bar__header
     .side-bar__header-box
       .side-bar__header-box-name
-        masa
+        = current_user.name
       .side-bar__header-box-icon
         .side-bar__header-box-icon-new
           = link_to "#", class: "side-bar__header-box-icon-new" do
             = icon('fas', 'edit')
         .side-bar__header-box-icon-edit
-          = link_to "#", class: "side-bar__header-box-icon-edit" do
+          = link_to edit_user_path(current_user) do
             = icon('fas', 'cog')
   .side-bar__lists
     .side-bar__lists__list
-
-      .side-bar__lists__list__message
-        techcamp
-      .side-bar__lists__list__message2
-        まだメッセージがありません
+      = link_to "#" do
+        .side-bar__lists__list__message
+          techcamp
+        .side-bar__lists__list__message2
+          まだメッセージがありません
