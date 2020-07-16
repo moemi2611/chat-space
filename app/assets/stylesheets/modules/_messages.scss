@@ -79,36 +79,42 @@
           display: flex;
         }
       }
-      &__edit {
-        font-size: 16px;
-        color: #38aef0;
-        width: 72px;
-        padding: 28px 20px;
-      }
+    &__edit {
+      display: block;
+      font-size: 16px;
+      width: 72px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 20px;
+      color: #38AEF0;
+      border: 1px solid #38AEF0;
+      align-items: center;
+      margin-top: 28px;
+    }
   }
   &__message {
     background-color: #fafafa;
     width: calc(100vw - 300px);
     height: calc(100vh - 190px);
-      &__block {
+      .MessageBox {
         padding-left: 40px;
         padding-top: 35px;
-        &__name {
+        &__userName {
           color: #333333;
           font-size: 16px;
           padding-bottom: 12px;
           display: flex;
-          &__date {
-            color: #999999;
-            font-size: 12px;
-            margin-left: 10px;
-          }
         }
-        &__content {
-          padding-bottom: 46px;
-          color: #434A54;
-          font-size: 14px;
+        &__date {
+          color: #999999;
+          font-size: 12px;
+          margin-left: 10px;
         }
+      }
+      .Message__content {
+        padding-bottom: 46px;
+        color: #434A54;
+        font-size: 14px;
       }
   }
 
@@ -117,20 +123,20 @@
     background-color: #d2d2d2;
     padding: 20px 40px;
 
-    form {
+    Form {
       display: flex;
-      .input-box {
+      .Form__contents {
         display: flex;
         width: 100%;
         position: relative;
-        &__text {
+        .input-box__text {
           height: 50px;
           width: 100%;
           color: #434A54;
           border-style: none;
           padding: 0 40px 0 10px;
         }
-        &__image {
+        .input-box__image {
           position: absolute;
           top: 10px;
           right: 10px;
