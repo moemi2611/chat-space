@@ -2,15 +2,24 @@
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 .wrapper {
   display: flex;
 }
+
+
 
 .side-bar {
   background-color: #2f3e51;
   width: 300px;
   height: 100vh;
   color: #ffffff;
+  a{
+    color: #ffffff;
+  }
   &__header {
     width: 300px;
     height: 100px;
@@ -69,6 +78,9 @@
 }
 
 .chat-main {
+  a{
+    color: #38AEF0;
+  }
   &__header {
     background-color: #ffffff;
     width: calc(100vw - 300px);
