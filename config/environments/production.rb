@@ -11,7 +11,7 @@ Rails.application.configure do
   config.eager_load = true
 
   # Full error reports are disabled and caching is turned on.
-  config.consider_all_requests_local       = true
+  config.consider_all_requests_local       = false
   # エラー対応が終わったら、忘れずにfalseに戻してデプロイをし直す。
   config.action_controller.perform_caching = true
 
