@@ -3,6 +3,7 @@
 }
 
 a{
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -18,7 +19,7 @@ a{
   height: 100vh;
   color: #ffffff;
   a{
-    color: #ffffff!important;
+    // color: #ffffff;
   }
   &__header {
     width: 300px;

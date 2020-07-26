@@ -72,3 +72,6 @@ $(function(){
   };
   setInterval(reloadMessages, 7000);
 });
+
+// $('a').css('color', '#ffffff')
+// $('.side-bar__lists__list>a').css('color', '#ffffff')
